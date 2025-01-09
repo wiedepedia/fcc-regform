@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Ice Cream Order Form</title>
+</head>
+<body>
+  <main>
+    <h1 id="title">Ice cream Order Form</h1>
+    <p id="description">Howdy camper! Welcome to Camp Smokey!<br />
+      What kind of ice cream would you like to have tonight?</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:
+      <input id="name" type="text" name="name" placeholder="John Doe" required></label>
+      
+      <label id="email-label" for="email">Email:
+      <input id="email" type="email" name="email" placeholder="john@doe.com" required></label>
+      
+      <label id="number-label" for="number">Scoops:
+      <input id="number" type="number" name="number" min="1" max="3" placeholder="1"></label>
+      
+      <label id="flavor-label" for="flavor">Flavor:
+      <select id="dropdown" name="flavor">
+        <option name="vanilla" value="vanilla">Vanilla</option>
+        <option name="chocolate" value="chocolate">Chocolate</option>
+        <option name="strawberry" value="strawberry">Strawberry</option>
+      </select>
+      </label>
+      
+      <p>Cup or cone?</p>
+      <label for "cup"><input id="cup" type="radio" name="cup-or-cone" value="cup" checked> Cup</label>
+      <label for "cone"><input id="cone" type="radio" name="cup-or-cone" value="cone"> Cone</label>
+      
+      <!-- add checkboxes -->
+      <!-- add submit button -->
+    </form>
+  </main>
+</body>
+</html>

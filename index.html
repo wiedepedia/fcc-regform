@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Ice Cream Order Form</title>
-</head>
-<body>
-  <main>
-    <h1 id="title">Ice Cream Order Form</h1>
-    <p id="description">Howdy camper! Welcome to Camp Smokey!<br>
-      What kind of ice cream would you like to have tonight?</p>
-    <form id="survey-form">
-      <label id="name-label" for="name">Name:
-      <input id="name" type="text" name="name" placeholder="John Doe" required></label>
-      
-      <label id="email-label" for="email">Email:
-      <input id="email" type="email" name="email" placeholder="john@doe.com" required></label>
-      
-      <label id="number-label" for="number">Scoops:
-      <input id="number" type="number" name="number" min="1" max="3" placeholder="1"></label>
-      
-      <label id="flavor-label" for="flavor">Flavor:
-      <select id="dropdown" name="flavor">
-        <option name="vanilla" value="vanilla">Vanilla</option>
-        <option name="chocolate" value="chocolate">Chocolate</option>
-        <option name="strawberry" value="strawberry">Strawberry</option>
-      </select>
-      </label>
-      
-      <p>Cup or cone?</p>
-      <label for "cup"><input id="cup" type="radio" name="cup-or-cone" value="cup" checked> Cup</label>
-      <label for "cone"><input id="cone" type="radio" name="cup-or-cone" value="cone"> Cone</label>
-      
-      <!-- add checkboxes -->
-      <!-- add submit button -->
-    </form>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ice Cream Order Form</title>
+  </head>
+  <body>
+    <main>
+      <section class="orderform">
+        <h1 id="title">ICE CREAM <span id="title-half">ORDER FORM</span></h1>
+        <p id="description">Howdy camper! Welcome to Camp Smokey!<br>
+          What kind of ice cream would you like to have tonight?</p>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name:
+          <input id="name" type="text" name="name" placeholder="John Doe" required></label>
+          <label id="email-label" for="email">Email:
+          <input id="email" type="email" name="email" placeholder="john@doe.com" required></label>
+          <label id="number-label" for="number">Scoops:
+          <input id="number" type="number" name="number" min="1" max="3" placeholder="1"></label>
+          <label id="flavor-label" for="flavor">Flavor:
+            <select id="dropdown" name="flavor">
+              <option name="vanilla" value="vanilla">Vanilla</option>
+              <option name="chocolate" value="chocolate">Chocolate</option>
+              <option name="strawberry" value="strawberry">Strawberry</option>
+            </select>
+          </label>
+          <h2>Cup or cone?</h2>
+          <label for "cup"><input id="cup" type="radio" name="cup-or-cone" value="cup" class="inline" checked> Cup</label>
+          <label for "cone"><input id="cone" type="radio" name="cup-or-cone" value="cone" class="inline"> Cone</label>
+          <h2>Any toppings?</h2>
+          <label for "sprinkes"><input id="sprinkles" type="checkbox" name="sprinkles" value="sprinkles" class="inline"> Sprinkles</label>
+          <label for "nuts"><input id="nuts" type="checkbox" name="nuts" value="nuts" class="inline"> Chopped nuts</label>
+          <label for "oreo"><input id="oreo" type="checkbox" name="oreo" value="oreo" class="inline"> Crushed Oreo</label>
+          <label for "pretzel"><input id="pretzel" type="checkbox" name="pretzel" value="pretzel" class="inline"> Pretzel bits</label>
+          <label for "cherries"><input id="cherries" type="checkbox" name="cherries" value="cherries" class="inline"> Maraschino cherries</label>
+          <label id="comment-label" for "comments">Any special requests?
+            <textarea id="comments" name="comments" rows="3" cols="40" placeholder="Place any special requests here..."></textarea>
+          </label>
+          <input type="submit" value="PLACE ORDER" />
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
